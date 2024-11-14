@@ -1,0 +1,341 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@font-face {
+  font-family: "IranYekan";
+  src: url("./assets/fonts/QS_IRANYEKAN.TTF");
+}
+
+@font-face {
+  font-family: "IranYekan-Medium";
+  src: url("./assets/fonts/QS_IRANYEKANMEDIUM.TTF");
+}
+
+@font-face {
+  font-family: "IranYekan-Bold";
+  src: url("./assets/fonts/QS_IRANYEKANBOLD.TTF");
+}
+
+:root {
+  font-family: "IranYekan", sans-serif;
+  line-height: 1.5;
+
+  --bg-color: #fff;
+  --txt1-color: #fff;
+  --txt2-color: #000;
+  --success-color: #00ff80;
+  --failed-color: #ff2727;
+
+  background-image: url("./assets/main-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "IranYekan-Medium";
+}
+
+/* Nav */
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Logo {
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.SettingIcon {
+  margin: 10px;
+  margin-left: 20px;
+}
+
+/* Navbar Panel */
+
+.Navbar-Panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-color: var(--txt2-color);
+  color: var(--txt1-color);
+  margin: 15px;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.Navbar-Panel-Links {
+  margin-right: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Navbar-Panel-Icon {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: auto;
+  user-select: none;
+}
+
+.Navbar-Panel-Links:hover,
+.Navbar-Panel-Icon:hover {
+  transform: scale(1.04);
+  transition: all 0.2s ease;
+}
+
+/* Navbar Panel Cards */
+
+.Navbar-Panel-Card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Navbar-Panel-Card h3,
+h4 {
+  margin: 10px;
+}
+
+.Navbar-Panel-Card1,
+.Navbar-Panel-Card2,
+.Navbar-Panel-Card3,
+.Navbar-Panel-Card4 {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: var(--txt2-color);
+  width: 4000px;
+  color: var(--txt1-color);
+  text-shadow: 0px 0px 20px var(--txt1-color);
+}
+
+/* MainBody */
+
+.MainBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Titles {
+  direction: rtl;
+  text-align: right;
+}
+
+.Title {
+  font-family: "IranYekan-Bold";
+  font-size: 30px;
+  margin: 50px;
+}
+
+.Content {
+  font-family: "IranYekan-Medium";
+  font-size: 15px;
+  margin: 50px;
+  width: 50%;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.Button1,
+.Button2 {
+  margin-right: 30px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.74);
+}
+
+.Button1 {
+  border: var(--txt2-color) 2px solid;
+  font-family: "IranYekan-Bold";
+}
+
+.Button2 {
+  background-color: var(--txt2-color);
+  color: var(--txt1-color);
+}
+
+/* LoginPage */
+
+.Login-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+
+.Login-Form {
+  direction: rtl;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 50px;
+  border: 2px solid var(--txt2-color);
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.Login-Form button {
+  margin: 5px;
+}
+
+.Login-Form-Components {
+  margin: 10px auto;
+  border: 2px solid var(--txt2-color);
+  border-radius: 12px;
+}
+
+#Login-Form-Component1 {
+  background-color: var(--txt2-color);
+  color: white;
+}
+
+/* NewProd */
+
+.NewProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  direction: rtl;
+  flex-direction: column;
+}
+
+.NewProduct h1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.NewProductInput1,
+.NewProductInput2,
+.NewProductInput3 {
+  margin: 5px;
+  width: 98%;
+  border-radius: 10px;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  direction: rtl;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.Button .ButtonPr {
+  margin: 5px;
+}
+
+/* Panel */
+
+.panel {
+  padding: 20px;
+  direction: rtl;
+  text-align: right;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: calc(33% - 20px);
+}
+
+/* BarCode */
+
+.BarCode-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  direction: rtl;
+  flex-direction: column;
+  width: 100%;
+}
+
+.BarCode-Container h1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.BarCode-Input {
+  margin: 5px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.BarCode-Container .BarCode-Button {
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.BarCode-Hide-Container {
+   width: auto; 
+   max-width: 100%; 
+}
+
+.BarCode-Hide-Content-1 {
+  border: #e9e8e9 2px solid;
+  padding: 15px; 
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  
+  min-width: 350px; 
+}
+
+.BarCode-Confirmation-Box {
+  width: 100%;
+}
+
+.BarCode-Confirmation-Box-Desc {
+  margin-top: 5%;
+  border: #e9e8e9 2px solid;
+  padding: 15px; 
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.barcode_image_item {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  margin: auto; 
+}
